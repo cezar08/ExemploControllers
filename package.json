@@ -1,0 +1,15 @@
+{
+  "name": "exemplocontrollers",
+  "version": "1.0.0",
+  "description": "Aula controllers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cezar Junior de Souza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
