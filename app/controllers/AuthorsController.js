@@ -51,8 +51,8 @@ router.delete('/:id', security.verifyJWT, function(req, res){
     models.Author.destroy({
         where: {id: req.params.id}
     }).then(author => {
-        res.status(200).send('Excluído com sucesso')
-    })
+        res.status(200).send({'success': 'Excluído com sucesso'})
+    }).catch (err => res.status(500).send({error: err}))
 })
 
 module.exports = router
